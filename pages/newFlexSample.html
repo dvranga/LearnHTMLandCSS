@@ -48,9 +48,13 @@
             .sideBarItem{flex: 1 0 0; border: 0px solid green;}
             .mainContainer{flex: 3 0px;}
 
-            .sideBarLeftItem{order: 1;}
+            .sideBarLeftItem{order: 0;}
+            .mainContentItem{order: 3;}
+            .sideBarRightItem{order: 1;}
+            /* .sideBarLeftItem{order: 1;}
             .mainContentItem{order: 2;}
-            .sideBarRightItem{order: 3;}
+            .sideBarRightItem{order: 3;} */
+
         </style>
     </head>
     <body>
@@ -58,6 +62,7 @@
             <h1>Header - sample flexbox Example</h1>
         </header>
         <div class="mainContainer">
+            <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
             <section class="mainContentItem" >
                 <article>
                     <h2>First article</h2>
@@ -81,7 +86,6 @@
                     </p>
                 </article>
             </section>
-            <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
             <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
         </div>
         <footer class="footerContainer">Footer</footer>
